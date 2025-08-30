@@ -1,6 +1,6 @@
 // Replace with your Supabase credentials
-const SUPABASE_URL = 'JOUW_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'JOUW_ANON_KEY';
+const SUPABASE_URL = 'https://gbtfthvrgibjffblojgn.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_secret_k3l2tcSk4KXCrsXgf86s4w_bpXY7c51';
 
 const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const messageGrid = document.getElementById('message-grid');
@@ -38,4 +38,5 @@ async function fetchAndRenderMessages() {
 setInterval(fetchAndRenderMessages, 5000);
 
 // Initial fetch
+
 fetchAndRenderMessages();
