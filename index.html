@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Stuur een bericht</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f2f5; }
+        .form-container { background-color: white; padding: 2em; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        label { display: block; margin-top: 1em; font-weight: bold; }
+        input, textarea { width: 100%; padding: 0.8em; margin-top: 0.5em; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { display: block; width: 100%; padding: 1em; margin-top: 1.5em; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Stuur je bericht en foto</h2>
+        <form id="message-form">
+            <label for="message-text">Jouw bericht:</label>
+            <textarea id="message-text" rows="4" required></textarea>
+            <label for="message-photo">Jouw foto:</label>
+            <input type="file" id="message-photo" accept="image/*" required>
+            <button type="submit">Verstuur</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
